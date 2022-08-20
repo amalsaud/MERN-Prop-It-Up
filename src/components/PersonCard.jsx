@@ -8,7 +8,6 @@ class PersonCard extends Component {
                 <h1>{lName}, {fName}</h1>
                 <p>{age}</p>
                 <p>{hairColor}</p>
-                <button>Birthday Button for </button>
             </div>
         );
     }
