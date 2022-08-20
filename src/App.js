@@ -12,10 +12,10 @@ function App() {
   return (
     <div className='App'>
       {personList.map(person => <PersonCard
-        lName={"Doe"}
-        fName={"Jane"}
-        age={45}
-        hairColor={"Black"}
+        lName={person.lName}
+        fName={person.fName}
+        age={person.age}
+        hairColor={person.hairColor}
       />
       )}
     </div>
