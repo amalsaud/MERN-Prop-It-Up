@@ -1,18 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class PersonCard extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
+class PersonCard extends Component {
     render() {
+        const { fName, lName, age, hairColor } = this.props;
         return (
-        <div className='card'>
-        <h1>{this.props.lName}, {this.props.fName}</h1>
-        <p>{this.props.age}</p>
-        <p>{this.props.hairColor}</p>
-        </div>
-        )
+            <div className='card'>
+                <h1>{lName}, {fName}</h1>
+                <p>{age}</p>
+                <p>{hairColor}</p>
+                <button>Birthday Button for </button>
+            </div>
+        );
     }
 }
 
